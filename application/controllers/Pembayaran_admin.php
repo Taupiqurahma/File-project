@@ -75,13 +75,13 @@ private function _sendEmail($param)
   $config['protocol'] = "smtp";
   $config['smtp_host'] = "ssl://smtp.googlemail.com";
   $config['smtp_port'] = "465";
-  $config['smtp_user'] = 'ppdbcakrawala@gmail.com';
-  $config['smtp_pass'] = 'ppdbonline';
+  $config['smtp_user'] = 'isi dengan email anda';
+  $config['smtp_pass'] = 'isi dengan password email anda';
   $config['charset'] = "utf-8";
   $config['mailtype'] = "html";
   $config['newline'] = "\r\n";
   $ci->email->initialize($config);
-  $ci->email->from('ppdbcakrawala.mail@gmail.com', 'PPDB');
+  $ci->email->from('isi dengan email anda', 'PPDB');
   $list = array($this->input->post('email'));
   $ci->email->to($list);
   $ci->email->subject('Aktivasi Kode Daftar');
